@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_eigth/widgets/news_boxed.dart';
 import 'package:flutter_eigth/widgets/news_widget.dart';
 
 class TopStoryScreen extends StatefulWidget {
@@ -41,6 +42,34 @@ class _TopStoryScreenState extends State<TopStoryScreen> {
               time: '50 minutes ago',
               isTopStory: true,
               isFullCoverage: true,
+            ),
+          ),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                CustomBox(
+                    title:
+                        'Canadian Prime Minister Justin Trudeau, wife of 18 years announce separation',
+                    logoPath:
+                        'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fox_News_Channel_logo.svg/1024px-Fox_News_Channel_logo.svg.png',
+                    time: '1 hour ago',
+                    pressName: 'Fox News'),
+                CustomBox(
+                    title:
+                        'Ashes of Creation Shows Updated Cleric, Highwaymen Hills Location, and Dynamic Systems in Verra',
+                    logoPath:
+                        'https://images.mmorpg.com/images/mmorpg_logo.png',
+                    time: '2 hours ago',
+                    pressName: 'MMORPG'),
+                CustomBox(
+                    title:
+                        'How many goals has Cristiano Ronaldo scored at Al Nassr this season? CR7 stats in Saudi Arabia in 2023-2024',
+                    logoPath:
+                        'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/The_Sporting_News_logo_2022.svg/639px-The_Sporting_News_logo_2022.svg.png',
+                    time: '2 hours ago',
+                    pressName: 'TS News'),
+              ],
             ),
           ),
           Divider(),
