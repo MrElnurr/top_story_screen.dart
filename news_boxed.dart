@@ -27,8 +27,8 @@ class CustomBox extends StatelessWidget {
               decoration: BoxDecoration(
                 color: const Color.fromARGB(255, 240, 238, 238),
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(
-                    color: const Color.fromARGB(255, 240, 236, 236)!),
+                border:
+                    Border.all(color: const Color.fromARGB(255, 240, 236, 236)),
               ),
               child: Padding(
                 padding: const EdgeInsets.only(top: 5, left: 3),
@@ -55,7 +55,7 @@ class CustomBox extends StatelessWidget {
                                   fontSize: 13,
                                   fontWeight: FontWeight.normal,
                                   color:
-                                      const Color.fromARGB(255, 117, 117, 117)!,
+                                      const Color.fromARGB(255, 117, 117, 117),
                                 ),
                               ),
                             ],
@@ -87,7 +87,7 @@ class CustomBox extends StatelessWidget {
                   fontFamily: 'GoogleSans',
                   fontSize: 13,
                   fontWeight: FontWeight.normal,
-                  color: const Color.fromARGB(255, 117, 117, 117)!,
+                  color: const Color.fromARGB(255, 117, 117, 117),
                 ),
               ),
             ),
